@@ -1,0 +1,18 @@
+
+browser->server: HTTP POST user note to server address 'new note'
+server->browser: HTTP status code 302 (url redirect asking for HTTP GET)
+
+
+note over A,B: 
+browser reloads Notes page 
+
+end note
+
+browser->server: HTTP GET notes
+server->browser: Status code 200, raw data of notes are sent to browser
+
+browser->server: HTTP GET style sheet
+server->browser: Status code 200, style sheet sent to browser
+
+browser->server: HTTP GET js
+server->browser: Status code 200, js code sent to browser

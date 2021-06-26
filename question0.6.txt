@@ -1,0 +1,16 @@
+
+Browser->Server: HTTP POST: contains new note in JSON format and tells the server that the data is in JSON format
+
+
+Server->Browser:Status code 201: uses js code from browser 
+
+
+
+note left of Browser
+   Content type header tells server the data is in JSON format.
+   Using js fetched from the server, the user data is fetched from the page
+   and an event handler is registered to handle the submission of the form.
+   The event handler creates a new note, appends it to list, and sends to
+   server.
+   C
+end note

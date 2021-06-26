@@ -1,0 +1,11 @@
+
+Browser->Server: HTTP POST: contains new note in JSON format and tells the server that the data is in JSON format
+
+
+Server->Browser:Status code 201: uses js code from browser 
+
+
+
+note left of Browser
+   Browser also sends js code
+end note
